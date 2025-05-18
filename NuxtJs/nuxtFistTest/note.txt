@@ -1,1 +1,1 @@
-Some package in nuxt must be installed with a "@nuxt/" to specify that we'll use the package that is proper to nuxt. after intalling it, we must add it to de module property of nuxt config as an array. Only then, nuxt will lokk at this package. ::
+Some package in nuxt must be installed with a "@nuxt/" to specify that we'll use the package that is proper to nuxt. after intalling it, we must add it to de module property of nuxt config as an array. Only then, nuxt will lokk at this package. 

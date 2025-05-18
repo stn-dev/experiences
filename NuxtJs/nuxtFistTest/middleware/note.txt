@@ -1,0 +1,9 @@
+middleware is used to run some directive before enter to a scepific route. Most specifically used to add authentication system
+
+if we want a middleware file to be used for all the project, we add the suffix "global" after the name of the file. In middleware we can access the "to" and "from" that give us the route we came from and the route we want to access.
+
+if it is used for a unique file, the we just don't add global and specify in that file that we want to use this specific middleware with the "definePageMeta" property and the middleware property inside it.
+
+The global middleware is executed before the specific middleware.
+
+We can add middleware in the plugin file to by specifing a property called "addRouteMiddleware". As argument, we add the name of the plugins, and a function with our logic. The third parameter is optional, if we want it to be global, we just add an object with a property global and set the value to true.

@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter Tight", sans-serif;
+}
+
+html,body {
+    background-color: black;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-color: transparent;
+    // h2 {
+    //     max-height: 9vw;
+    // }
+}
+
+
+/* HOME PAGE INTEGRATION */
+.homeSection{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    position: relative;
+    @extend %flex;
+    h2 {
+        font-size: 8vw;
+        font-weight: bold;
+        position: relative;
+    }
+    h4 {
+        font-size: 1.5vw;
+        font-weight: bold;
+    }
+    p {
+        font-size: 1vw;
+        font-weight: normal;
+    }
+
+    .intro-section {
+        position: absolute;
+        top: 150px;
+        left: 8.3vw;
+        @extend %flexColumn;
+        align-items: flex-start;
+        gap: 1.4vw;
+        .mouseEffect {
+            width: 25%;
+            height: 100%;
+            border-radius: 100%;
+            position: absolute;
+            background-color: white;
+            mix-blend-mode: difference;
+            animation: animatecircle 5s linear infinite;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
+    @keyframes animatecircle {
+        0%{
+            top: 0;
+            left: 0px;
+            border-radius: 0;
+        }
+        25%{
+           top: 0; 
+           left: 40%;
+           border-radius: 40%;
+           
+        }
+        50%{
+            top: 0;
+            left: 80%;
+            border-radius: 100%;
+            
+        }
+        75%{
+            top: 0;
+            left: 40%;
+            border-radius: 40%;
+            
+        }
+        100%{
+            top: 0;
+            left: 0;
+            border-radius: 0;
+            
+        }
+    }
+    
+
+    .staf-part {
+        position:absolute;
+        right: 7vw;
+        bottom: 200px;
+    }
+
+    .cube3d {
+        width: 28vw;
+        height: 28vw;
+        position: relative;
+        perspective: 1000;
+        transform-style: preserve-3d;
+        
+        .face {
+            width: 28vw;
+            height: 28vw;
+            position: absolute;
+            transform-style: preserve-3d;
+            opacity: 0.4;
+            background-color: transparent;
+            border: 0.5vw solid white;
+        }
+        .front {
+            transform: translateZ(14vw);
+        }
+        .back {
+            transform: rotateY(180deg) translateZ(14vw) ;
+        }
+        .left {
+            transform: rotateY(90deg) translateZ(14vw);
+        }
+        .rigth {
+            transform: rotateY(-90deg)translateZ(14vw);
+        }
+        .top {
+            transform: rotateX(90deg)translateZ(14vw);
+        }
+        .bottom {
+            transform: rotateX(-90deg)translateZ(14vw);
+        }
+    }
+}
+
+
+/* responsive for the hero section */
+
+@media screen and (max-width:1000px) {
+
+    .homeSection {
+        h2 {
+            font-size: 10vw;
+        }
+        h4 {
+            font-size: 2vw;
+        }
+        p {
+            font-size: 1.5vw;
+        }
+        .mouseEffect {
+            width: 100px;
+            height: 100px;
+        }
+        .staf-part {
+            bottom: 100px;
+        }
+    }
+}
+
+/* responsive phone for hero section */
+
+  @media screen and (max-width:500px) {
+
+
+    .homeSection {
+        h2 {
+            font-size: 12vw;
+        }
+        h4 {
+            font-size: 3vw;
+        }
+        p {
+            font-size: 2.5vw;
+            margin-top: 1.5vw;
+        }
+        .intro-section {
+            top: 100px;
+        }
+
+        .staf-part {
+            bottom: 150px;
+        }
+    }
+  }

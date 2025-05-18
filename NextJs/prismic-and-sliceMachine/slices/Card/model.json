@@ -1,0 +1,59 @@
+{
+  "id": "card",
+  "type": "SharedSlice",
+  "name": "Card",
+  "description": "Card",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "card_img": {
+          "type": "Image",
+          "config": {
+            "label": "card_img",
+            "constraint": {
+              "width": 200,
+              "height": 250
+            },
+            "thumbnails": []
+          }
+        },
+        "title_card": {
+          "type": "StructuredText",
+          "config": {
+            "label": "title_card",
+            "placeholder": "title card",
+            "allowTargetBlank": true,
+            "multi": "heading3"
+          }
+        },
+        "card_descri": {
+          "type": "StructuredText",
+          "config": {
+            "label": "card_descri",
+            "placeholder": "card description",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        },
+        "card_link": {
+          "type": "Link",
+          "config": {
+            "label": "card_link",
+            "placeholder": "link to card",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

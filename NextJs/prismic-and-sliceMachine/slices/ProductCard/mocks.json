@@ -1,0 +1,74 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"product_img": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab",
+					"width": 12288,
+					"height": 16384
+				},
+				"url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?rect=0%2C512%2C12288%2C15360&w=200&h=250",
+				"width": 200,
+				"height": 250,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 512
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"product_name": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Machine"
+						}
+					}
+				]
+			},
+			"product_descri": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Qui reprehenderit Lorem consectetur anim sit elit deserunt nulla officia id minim est."
+						}
+					}
+				]
+			},
+			"products_price": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Esse non mollit sunt commodo labore sit minim ex mollit sint incididunt nisi adipisicing sit. Ex proident deserunt anim esse eu cupidatat. Nulla minim velit aliqua esse aliquip consectetur nulla laborum veniam anim."
+						}
+					}
+				]
+			},
+			"product_link": {
+				"__TYPE__": "LinkContent",
+				"key": "b21197fe-448d-422e-9fb3-5eadc89092e2",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://prismic.io",
+					"text": "tried"
+				}
+			}
+		},
+		"items": []
+	}
+]

@@ -1,0 +1,51 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"card_img": {
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1517260739337-6799d239ce83?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDE5MTQ2NTl8MA&ixlib=rb-4.0.3&q=85&rect=0,720,5760,2400&w=1440&h=600",
+				"alt": "sliced fruit on white surface",
+				"origin": {
+					"id": "YSA1IRkGAsg",
+					"url": "https://images.unsplash.com/photo-1517260739337-6799d239ce83?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDE5MTQ2NTl8MA&ixlib=rb-4.0.3&q=85",
+					"width": 5760,
+					"height": 3840
+				},
+				"width": 1440,
+				"height": 600,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 720
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"card_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "title",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "description"
+			}
+		},
+		"items": []
+	}
+]

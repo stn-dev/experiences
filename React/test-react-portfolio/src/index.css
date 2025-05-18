@@ -1,0 +1,1023 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=LXGW+WenKai+Mono+TC&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.3s ease-in-out;
+  scroll-behavior: smooth;
+}
+
+/* font and size */
+.contactSection .formContainer .messageContainer textarea::-moz-placeholder, .contactSection .formContainer .input .nameContainer input::-moz-placeholder, .contactSection .formContainer .input .mailContainer input::-moz-placeholder {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+.footerSection .footerNav a p, .contactSection .formContainer button, .contactSection .formContainer .messageContainer textarea::placeholder, .contactSection .formContainer .messageContainer textarea, .contactSection .formContainer .input .nameContainer input::placeholder, .contactSection .formContainer .input .mailContainer input::placeholder, .contactSection .formContainer .input .nameContainer input, .contactSection .formContainer .input .mailContainer input, .contactSection .titleParts h4, .skillSection .titlePart p, .skillSection .titlePart h4, .aboutSection .titleDiv h4, .heroSection .introducing button, .navbar .nav a {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.contactSection .titleParts h2, .skillSection .titlePart h2, .aboutSection .aboutInfos .image, .aboutSection .titleDiv h2, .heroSection .image, .heroSection .introducing .design, .heroSection .introducing .front {
+  font-size: 48px;
+  font-weight: bold;
+  color: #00E0FF;
+}
+
+.footerSection h6, .contactSection .formContainer .messageContainer p, .contactSection .formContainer .input .nameContainer p, .contactSection .formContainer .input .mailContainer p, .aboutSection .aboutInfos p, .heroSection .introducing p {
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+}
+
+.footerSection .socialMedia, .footerSection .footerNav a, .footerSection .footerNav, .contactSection .formContainer .input, .contactSection .titleParts h4, .skillSection .skills .hiddlenPart .skill, .skillSection .skills, .skillSection .titlePart h4, .aboutSection .aboutInfos .image, .aboutSection .titleDiv h4, .heroSection .image, .heroSection, .navbar .nav, .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerSection, .contactSection .formContainer, .contactSection .titleParts, .contactSection, .skillSection .titlePart, .skillSection, .aboutSection, .heroSection .introducing, .heroSection .socialMedia .socialIcons, .heroSection .socialMedia, .navbar .menuIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  width: 100%;
+  min-height: 100%;
+  background-color: grey;
+  overflow: hidden;
+  position: relative;
+}
+
+.redline {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: red;
+  position: fixed;
+  top: 20vh;
+  left: 0;
+}
+
+/* toogle mode components */
+/* light */
+.ligthside {
+  width: 100px;
+  height: 50px;
+  border-radius: 40px;
+  background-image: linear-gradient(aqua, rgb(0, 183, 255));
+  position: relative;
+}
+.ligthside:hover {
+  cursor: pointer;
+}
+.ligthside .light {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: yellow;
+  box-shadow: 0px 0px 1px 1px rgba(255, 255, 0, 0.2588235294);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+/* dark */
+.darkside {
+  width: 100px;
+  height: 50px;
+  border-radius: 40px;
+  background-image: linear-gradient(rgb(121, 0, 139), rgb(23, 0, 152));
+  position: relative;
+}
+.darkside:hover {
+  cursor: pointer;
+}
+.darkside .dark {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: whitesmoke;
+  box-shadow: 0px 0px 1px 1px rgba(255, 255, 0, 0.2588235294);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+/*nav bar component*/
+.navbar {
+  width: 100%;
+  height: 120px;
+  background-color: #006B82;
+  gap: 14vw;
+  position: fixed;
+  z-index: 1000;
+  box-shadow: 4px 5px 20px 7px #006B82;
+}
+.navbar .nav {
+  gap: 7vw;
+}
+.navbar .nav a {
+  text-decoration: none;
+  color: white;
+}
+.navbar .nav .active {
+  color: #FFD600;
+}
+.navbar .menuIcon {
+  width: 50px;
+  min-height: 25px;
+  position: relative;
+  justify-content: space-between;
+  transition: all 1s ease-in-out;
+  display: none;
+}
+.navbar .menuIcon hr {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+}
+.navbar .menuIcon:hover {
+  cursor: pointer;
+}
+.navbar .cross {
+  position: relative;
+}
+.navbar .cross .firstChild {
+  position: absolute;
+  bottom: 10px;
+  rotate: -50deg;
+}
+.navbar .cross .secondChild {
+  display: none;
+}
+.navbar .cross .lastChild {
+  position: absolute;
+  bottom: 10px;
+  rotate: 50deg;
+}
+
+/* hero section */
+.heroSection {
+  width: 90%;
+  min-height: 700px;
+  margin: auto;
+  padding-top: 200px;
+  margin-bottom: 150px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.heroSection .socialMedia {
+  gap: 20px;
+}
+.heroSection .socialMedia hr {
+  width: 2px;
+  height: 160px;
+}
+.heroSection .socialMedia .socialIcons {
+  width: 35px;
+  height: 230px;
+  gap: 30px;
+}
+.heroSection .socialMedia .socialIcons img {
+  width: 35px;
+  height: 35px;
+}
+.heroSection .socialMedia .socialIcons img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.heroSection .introducing {
+  width: 550px;
+  min-height: 400px;
+  align-items: flex-start;
+  gap: 20px;
+}
+.heroSection .introducing h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+.heroSection .introducing h2 {
+  height: 130px;
+  font-size: 64px;
+  font-weight: bold;
+  color: white;
+}
+.heroSection .introducing h2::first-letter {
+  height: 130px;
+  font-size: 128px;
+  font-weight: bold;
+  color: #FFD600;
+}
+.heroSection .introducing .design {
+  color: #001688;
+}
+.heroSection .introducing button {
+  width: 140px;
+  height: 45px;
+  border-radius: 13px;
+  background-color: white;
+  color: #006B82;
+}
+.heroSection .image {
+  width: 32vw;
+  height: 32vw;
+  border-radius: 36px;
+  color: white;
+}
+
+/* About me section */
+.aboutSection {
+  width: 840px;
+  min-height: 550px;
+  margin: auto;
+  padding-top: 200px;
+  gap: 50px;
+}
+.aboutSection .titleDiv {
+  width: 260px;
+  height: 100px;
+  position: relative;
+}
+.aboutSection .titleDiv h4 {
+  gap: 5px;
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  color: #FFD600;
+}
+.aboutSection .titleDiv h4 span {
+  width: 38px;
+  height: 3px;
+  background-color: #FFD600;
+}
+.aboutSection .aboutInfos {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+.aboutSection .aboutInfos .image {
+  width: 460px;
+  height: 460px;
+  border-radius: 35px;
+  color: rgba(255, 255, 255, 0.381);
+}
+.aboutSection .aboutInfos p {
+  width: 420px;
+  position: absolute;
+  top: 30%;
+  right: 20px;
+}
+
+/* skill section */
+.skillSection {
+  width: 90%;
+  min-height: 647px;
+  margin: 300px auto 200px auto;
+  padding-top: 200px;
+  gap: 50px;
+}
+.skillSection .titlePart {
+  width: 70%;
+  min-height: 150px;
+  gap: 50px;
+  position: relative;
+}
+.skillSection .titlePart h4 {
+  color: #FFD600;
+  gap: 5px;
+  position: absolute;
+  top: 80px;
+  right: 28%;
+}
+.skillSection .titlePart h4 span {
+  width: 38px;
+  height: 3px;
+  background-color: #FFD600;
+}
+.skillSection .skills {
+  width: 100%;
+  min-height: 500px;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.skillSection .skills .hiddlenPart {
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  position: relative;
+  background-color: transparent;
+}
+.skillSection .skills .hiddlenPart .skill {
+  width: 100%;
+  height: 100%;
+  border: 3px solid #00E0FF;
+  border-radius: 50px;
+  z-index: 1;
+}
+.skillSection .skills .hiddlenPart .skill img {
+  z-index: 2;
+  width: 80px;
+  height: 100px;
+}
+
+/* contact section */
+.contactSection {
+  width: 80%;
+  min-height: 684px;
+  margin: 100px auto 100px auto;
+  padding-top: 150px;
+  gap: 50px;
+}
+.contactSection .titleParts {
+  width: 70%;
+  min-height: 110px;
+  position: relative;
+}
+.contactSection .titleParts h4 {
+  color: #FFD600;
+  gap: 5px;
+  position: absolute;
+  top: 90px;
+  right: 28%;
+}
+.contactSection .titleParts h4 span {
+  width: 38px;
+  height: 3px;
+  background-color: #FFD600;
+}
+.contactSection .formContainer {
+  width: 90%;
+  min-height: 500px;
+  gap: 30px;
+}
+.contactSection .formContainer .input {
+  width: 100%;
+  min-height: 100px;
+  gap: 20px;
+}
+.contactSection .formContainer .input .nameContainer, .contactSection .formContainer .input .mailContainer {
+  width: 440px;
+  min-height: 85px;
+  position: relative;
+  text-align: center;
+}
+.contactSection .formContainer .input .nameContainer input, .contactSection .formContainer .input .mailContainer input {
+  width: 440px;
+  height: 85px;
+  border-radius: 38px;
+  padding: 0 20px;
+  background-color: #00798A;
+  border: 3px solid #00E0FF;
+  color: #00E0FF;
+  outline: none;
+}
+.contactSection .formContainer .input .nameContainer input::-moz-placeholder, .contactSection .formContainer .input .mailContainer input::-moz-placeholder {
+  color: rgba(0, 225, 255, 0.5176470588);
+}
+.contactSection .formContainer .input .nameContainer input::placeholder, .contactSection .formContainer .input .mailContainer input::placeholder {
+  color: rgba(0, 225, 255, 0.5176470588);
+}
+.contactSection .formContainer .input .nameContainer img, .contactSection .formContainer .input .mailContainer img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 35px;
+  right: 20px;
+}
+.contactSection .formContainer .input .nameContainer p, .contactSection .formContainer .input .mailContainer p {
+  font-weight: bold;
+  color: #FFD600;
+  margin-top: 10px;
+  display: none;
+}
+.contactSection .formContainer .input .error input {
+  border-color: #FFD600;
+}
+.contactSection .formContainer .input .error p {
+  display: block;
+}
+.contactSection .formContainer .messageContainer {
+  width: 890px;
+  min-height: 290px;
+  position: relative;
+  text-align: center;
+}
+.contactSection .formContainer .messageContainer textarea {
+  width: 890px;
+  height: 290px;
+  background-color: #00798A;
+  border: 3px solid #00E0FF;
+  border-radius: 38px;
+  padding: 20px;
+  color: #00E0FF;
+  outline: none;
+}
+.contactSection .formContainer .messageContainer textarea::-moz-placeholder {
+  color: rgba(0, 225, 255, 0.5176470588);
+}
+.contactSection .formContainer .messageContainer textarea::placeholder {
+  color: rgba(0, 225, 255, 0.5176470588);
+}
+.contactSection .formContainer .messageContainer img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+}
+.contactSection .formContainer .messageContainer p {
+  font-weight: bold;
+  color: #FFD600;
+  margin-top: 10px;
+  display: none;
+}
+.contactSection .formContainer .error textarea {
+  border-color: #FFD600;
+}
+.contactSection .formContainer .error p {
+  display: block;
+}
+.contactSection .formContainer button {
+  width: 200px;
+  height: 70px;
+  border-radius: 27px;
+  background-color: #00E0FF;
+  color: #006B82;
+}
+.contactSection .formContainer button:hover {
+  cursor: pointer;
+}
+
+/* footer section */
+.footerSection {
+  width: 100%;
+  height: 400px;
+  gap: 7vw;
+  position: relative;
+}
+.footerSection .footerNav {
+  gap: 10vw;
+}
+.footerSection .footerNav a {
+  text-decoration: none;
+  gap: 10px;
+}
+.footerSection .footerNav a img {
+  width: 25px;
+  height: 25px;
+}
+.footerSection .footerNav a p {
+  color: #FFD600;
+}
+.footerSection .socialMedia {
+  gap: 2vw;
+}
+.footerSection .socialMedia img {
+  width: 35px;
+  height: 35px;
+}
+.footerSection .socialMedia img:hover {
+  cursor: pointer;
+}
+.footerSection h6 {
+  color: #FFD600;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* responsive tablette size */
+@media screen and (max-width: 900px) {
+  /*toogle button*/
+  .darkside {
+    width: 50px;
+    height: 25px;
+  }
+  .darkside .dark {
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    right: 2px;
+  }
+  .ligthside {
+    width: 50px;
+    height: 25px;
+  }
+  .ligthside .light {
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: 2px;
+  }
+  /* navbar */
+  .navbar {
+    height: 60px;
+  }
+  .navbar .nav a {
+    font-size: 16px;
+  }
+  .navbar img {
+    width: 79px;
+    height: 30px;
+  }
+  /* hero section */
+  .heroSection {
+    margin-bottom: 50px;
+    min-height: 400px;
+    padding-top: 100px;
+  }
+  .heroSection .socialMedia {
+    gap: 10px;
+  }
+  .heroSection .socialMedia hr {
+    height: 90px;
+  }
+  .heroSection .socialMedia .socialIcons {
+    width: 20px;
+    height: 146px;
+    gap: 22px;
+  }
+  .heroSection .socialMedia .socialIcons img {
+    width: 20px;
+    height: 20px;
+  }
+  .heroSection .introducing {
+    width: 340px;
+    height: 285px;
+    gap: 10px;
+  }
+  .heroSection .introducing h4 {
+    font-size: 16px;
+  }
+  .heroSection .introducing h2 {
+    height: 78px;
+    font-size: 24px;
+  }
+  .heroSection .introducing h2::first-letter {
+    height: 78px;
+    font-size: 80px;
+  }
+  .heroSection .introducing .front {
+    width: 340px;
+    font-size: 30px;
+  }
+  .heroSection .introducing .design {
+    font-size: 30px;
+  }
+  .heroSection .introducing p {
+    font-size: 12px;
+  }
+  .heroSection .introducing button {
+    width: 70px;
+    height: 25px;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+  /* about section */
+  .aboutSection {
+    width: 560px;
+    min-height: 420px;
+    padding-top: 100px;
+  }
+  .aboutSection .titleDiv {
+    width: 164px;
+    height: 64px;
+  }
+  .aboutSection .titleDiv h2 {
+    font-size: 30px;
+  }
+  .aboutSection .titleDiv h4 {
+    font-size: 16px;
+  }
+  .aboutSection .titleDiv h4 span {
+    width: 20px;
+  }
+  .aboutSection .aboutInfos {
+    min-height: 315px;
+  }
+  .aboutSection .aboutInfos .image {
+    width: 310px;
+    height: 310px;
+    border-radius: 35px;
+  }
+  .aboutSection .aboutInfos p {
+    width: 250px;
+    font-size: 12px;
+  }
+  /* skill section */
+  .skillSection {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding-top: 100px;
+  }
+  .skillSection .titlePart {
+    min-height: 40px;
+    gap: 25px;
+  }
+  .skillSection .titlePart h2 {
+    font-size: 30px;
+  }
+  .skillSection .titlePart h4 {
+    font-size: 16px;
+    gap: 2px;
+    top: 35px;
+    right: 20%;
+  }
+  .skillSection .titlePart h4 span {
+    width: 20px;
+  }
+  .skillSection .titlePart p {
+    font-size: 16px;
+  }
+  .skillSection .skills {
+    gap: 35px;
+  }
+  /* contact section */
+  .contactSection {
+    min-height: 450px;
+    margin-top: 0;
+    padding-top: 100px;
+    gap: 30px;
+  }
+  .contactSection .titleParts {
+    min-height: 55px;
+  }
+  .contactSection .titleParts h2 {
+    font-size: 30px;
+  }
+  .contactSection .titleParts h4 {
+    font-size: 16px;
+    gap: 2px;
+    top: 50px;
+  }
+  .contactSection .titleParts h4 span {
+    width: 20px;
+  }
+  .contactSection .formContainer {
+    min-height: 205px;
+    gap: 25px;
+  }
+  .contactSection .formContainer .input {
+    min-height: 80px;
+    gap: 25px;
+  }
+  .contactSection .formContainer .input .nameContainer, .contactSection .formContainer .input .mailContainer {
+    width: 300px;
+    min-height: 60px;
+  }
+  .contactSection .formContainer .input .nameContainer input, .contactSection .formContainer .input .mailContainer input {
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+    padding: 0 15px;
+    font-size: 16px;
+  }
+  .contactSection .formContainer .input .nameContainer input::-moz-placeholder, .contactSection .formContainer .input .mailContainer input::-moz-placeholder {
+    font-size: 16px;
+  }
+  .contactSection .formContainer .input .nameContainer input::placeholder, .contactSection .formContainer .input .mailContainer input::placeholder {
+    font-size: 16px;
+  }
+  .contactSection .formContainer .input .nameContainer img, .contactSection .formContainer .input .mailContainer img {
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    top: 20px;
+  }
+  .contactSection .formContainer .input .nameContainer p, .contactSection .formContainer .input .mailContainer p {
+    font-size: 12px;
+  }
+  .contactSection .formContainer .messageContainer {
+    width: 635px;
+    min-height: 200px;
+  }
+  .contactSection .formContainer .messageContainer textarea {
+    width: 635px;
+    height: 200px;
+    border-radius: 30px;
+    font-size: 16px;
+  }
+  .contactSection .formContainer .messageContainer textarea::-moz-placeholder {
+    font-size: 16px;
+  }
+  .contactSection .formContainer .messageContainer textarea::placeholder {
+    font-size: 16px;
+  }
+  .contactSection .formContainer .messageContainer img {
+    width: 20px;
+    height: 20px;
+  }
+  .contactSection .formContainer .messageContainer p {
+    font-size: 12px;
+  }
+  .contactSection .formContainer button {
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 20px;
+  }
+  /* footer section */
+  .footerSection {
+    height: 280px;
+  }
+  .footerSection .footerNav a {
+    gap: 5px;
+  }
+  .footerSection .footerNav a img {
+    width: 15px;
+    height: 15px;
+  }
+  .footerSection .footerNav a p {
+    font-size: 16px;
+  }
+  .footerSection .socialMedia img {
+    width: 20px;
+    height: 20px;
+  }
+  .footerSection h6 {
+    font-size: 10px;
+  }
+}
+/* responsive phone model */
+@media screen and (max-width: 430px) {
+  /* toogle component */
+  .ligthside {
+    width: 40px;
+    height: 20px;
+  }
+  .ligthside .light {
+    width: 17px;
+    height: 17px;
+    top: 1.5px;
+    left: 1px;
+  }
+  .darkside {
+    width: 40px;
+    height: 20px;
+  }
+  .darkside .dark {
+    width: 17px;
+    height: 17px;
+    top: 1px;
+    right: 1px;
+  }
+  /* navbar */
+  .navbar {
+    height: 45px;
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+  .navbar .nav {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 100px;
+    position: absolute;
+    top: 50px;
+    left: -100vw;
+    background-color: #006B82;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 56px;
+  }
+  .navbar .nav a {
+    font-size: 40px;
+  }
+  .navbar .nav a:focus {
+    color: #FFD600;
+  }
+  .navbar .showNav {
+    left: 0;
+  }
+  .navbar .menuIcon {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    transition: all 1s ease-in-out;
+  }
+  /* hero section */
+  .heroSection {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2px;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas: "img img img img img" "social intro intro intro intro";
+  }
+  .heroSection .image {
+    width: 70vw;
+    height: 70vw;
+    grid-area: img;
+  }
+  .heroSection .socialMedia {
+    grid-area: social;
+    gap: 20px;
+  }
+  .heroSection .socialMedia hr {
+    height: 50px;
+  }
+  .heroSection .introducing {
+    grid-area: intro;
+    width: 250px;
+    min-height: 300px;
+  }
+  .heroSection .introducing h4 {
+    font-size: 12px;
+  }
+  .heroSection .introducing h2 {
+    height: 45px;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .heroSection .introducing h2::first-letter {
+    height: 45px;
+    font-size: 60px;
+  }
+  .heroSection .introducing .front {
+    font-size: 25px;
+  }
+  .heroSection .introducing .design {
+    font-size: 25px;
+  }
+  .heroSection .introducing p {
+    width: 250px;
+  }
+  /* about section */
+  .aboutSection {
+    width: 310px;
+    min-height: 370px;
+    gap: 20px;
+  }
+  .aboutSection .titleDiv {
+    width: 130px;
+    height: 52px;
+  }
+  .aboutSection .titleDiv h2 {
+    font-size: 25px;
+  }
+  .aboutSection .titleDiv h4 {
+    bottom: 5px;
+    right: 2px;
+    font-size: 12px;
+  }
+  .aboutSection .titleDiv h4 span {
+    width: 15px;
+    height: 2px;
+  }
+  .aboutSection .aboutInfos {
+    width: 300px;
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutSection .aboutInfos .image {
+    width: 80vw;
+    height: 80vw;
+  }
+  .aboutSection .aboutInfos p {
+    width: 250px;
+    height: 120px;
+    font-size: 12px;
+    top: 60%;
+    right: 20px;
+  }
+  /* skill section */
+  .skillSection {
+    gap: 20px;
+  }
+  .skillSection .titlePart {
+    gap: 20px;
+  }
+  .skillSection .titlePart h2 {
+    font-size: 25px;
+  }
+  .skillSection .titlePart h4 {
+    font-size: 12px;
+    gap: 2px;
+    top: 30px;
+    right: 5%;
+  }
+  .skillSection .titlePart h4 span {
+    width: 15px;
+    height: 2px;
+  }
+  .skillSection .titlePart p {
+    font-size: 12px;
+  }
+  .skillSection .skills {
+    gap: 10px;
+  }
+  .skillSection .skills .hiddlenPart {
+    width: 120px;
+    height: 120px;
+  }
+  .skillSection .skills .hiddlenPart .skill {
+    border: 2px solid #00E0FF;
+    border-radius: 30px;
+  }
+  .skillSection .skills .hiddlenPart .skill img {
+    width: 60px;
+    height: 70px;
+  }
+  /* contact section */
+  .contactSection {
+    min-height: 500px;
+    gap: 30px;
+  }
+  .contactSection .titleParts {
+    min-height: 40px;
+  }
+  .contactSection .titleParts h2 {
+    font-size: 25px;
+  }
+  .contactSection .titleParts h4 {
+    font-size: 12px;
+    gap: 2px;
+    top: 35px;
+    right: 10%;
+  }
+  .contactSection .titleParts h4 span {
+    width: 15px;
+    height: 2px;
+  }
+  .contactSection .formContainer {
+    gap: 20px;
+  }
+  .contactSection .formContainer .input {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .contactSection .formContainer .input .nameContainer, .contactSection .formContainer .input .mailContainer {
+    width: 75vw;
+  }
+  .contactSection .formContainer .input .nameContainer input, .contactSection .formContainer .input .mailContainer input {
+    width: 75vw;
+    font-size: 12px;
+  }
+  .contactSection .formContainer .input .nameContainer input::-moz-placeholder, .contactSection .formContainer .input .mailContainer input::-moz-placeholder {
+    font-size: 12px;
+  }
+  .contactSection .formContainer .input .nameContainer input::placeholder, .contactSection .formContainer .input .mailContainer input::placeholder {
+    font-size: 12px;
+  }
+  .contactSection .formContainer .messageContainer {
+    width: 75vw;
+    min-height: 200px;
+  }
+  .contactSection .formContainer .messageContainer textarea {
+    width: 75vw;
+    height: 200px;
+  }
+  .contactSection .formContainer .messageContainer textarea::-moz-placeholder {
+    font-size: 12px;
+  }
+  .contactSection .formContainer .messageContainer textarea::placeholder {
+    font-size: 12px;
+  }
+  .contactSection .formContainer button {
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 12px;
+  }
+  /* footer section */
+  .footerSection {
+    height: 200px;
+  }
+  .footerSection .footerNav {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7vw;
+  }
+  .footerSection .footerNav a p {
+    font-size: 12px;
+  }
+  .footerSection .socialMedia {
+    position: absolute;
+    top: 35%;
+    right: 15%;
+    gap: 5vw;
+  }
+}/*# sourceMappingURL=index.css.map */

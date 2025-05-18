@@ -1,0 +1,3 @@
+"useFetch" work in client and server side, but it freez the page until we got the response so if we want to use a loader we must use "useLazyFetch"
+
+"useAsyncData" work like useFetch but it recieve two parameter, the first is a "key" tha refer on this endpoint and the second is the fetch function. we can use "useFetch" or "$fetch". Then when we want to refresh this request we can use a methode called "refreshNuxtData" and give the "key" of the request as a parameter.

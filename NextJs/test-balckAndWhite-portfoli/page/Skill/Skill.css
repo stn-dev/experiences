@@ -1,0 +1,303 @@
+.skill-section .skill-second-section .core .logo, .skill-section .skill-second-section .other-tools .logo, .skill-section .skill-second-section .framework .logo, .skill-section .skill-second-section .core .title, .skill-section .skill-second-section .other-tools .title, .skill-section .skill-second-section .framework .title, .skill-section .skill-first-section .animation-part .big-cube span, .skill-section .skill-first-section .animation-part .mini-cube-skill span, .skill-section .skill-first-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-section .skill-second-section .core, .skill-section .skill-second-section .other-tools, .skill-section .skill-second-section .framework, .skill-section .skill-second-section, .skill-section .skill-first-section .big-text-part, .skill-section .skill-first-section .animation-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-section {
+  width: 100%;
+  min-height: 2000px;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+.skill-section h6 {
+  font-size: 2vw;
+  color: white;
+  position: absolute;
+  top: 8.3vw;
+  left: 20%;
+}
+.skill-section .skill-first-section {
+  width: 100%;
+  min-height: 900px;
+  padding-top: 3.5vw;
+}
+.skill-section .skill-first-section .animation-part {
+  width: 40%;
+  height: 100%;
+  position: relative;
+  gap: 2vw;
+}
+.skill-section .skill-first-section .animation-part .mini-cube-skill {
+  width: 7vw;
+  height: 7vw;
+  position: relative;
+  perspective: 1000;
+  z-index: 10;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease-in-out;
+  animation: animate-mini-cube 3s linear infinite;
+}
+@keyframes animate-mini-cube {
+  0% {
+    transform: rotateX(-30deg) rotateY(0);
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+.skill-section .skill-first-section .animation-part .mini-cube-skill:hover span {
+  background-color: transparent;
+  color: transparent;
+  border: 3px solid whitesmoke;
+  box-shadow: 0 0 20px 5px whitesmoke;
+}
+.skill-section .skill-first-section .animation-part .mini-cube-skill span {
+  width: 7vw;
+  height: 7vw;
+  background-color: grey;
+  transform-style: preserve-3d;
+  position: absolute;
+  font-size: 1.3vw;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.skill-section .skill-first-section .animation-part .mini-cube-skill .front {
+  transform: translateZ(3.5vw);
+  background-color: rgb(58, 58, 58);
+}
+.skill-section .skill-first-section .animation-part .mini-cube-skill .left {
+  transform: rotateY(90deg) translateZ(3.5vw);
+  background-color: rgb(32, 32, 32);
+}
+.skill-section .skill-first-section .animation-part .mini-cube-skill .back {
+  transform: rotateY(180deg) translateZ(3.5vw);
+  background-color: rgb(58, 58, 58);
+}
+.skill-section .skill-first-section .animation-part .mini-cube-skill .rigth {
+  transform: rotateY(-90deg) translateZ(3.5vw);
+  background-color: rgb(32, 32, 32);
+}
+.skill-section .skill-first-section .animation-part .mini-cube-skill .top {
+  transform: rotateX(90deg) translateZ(3.5vw);
+  background-color: rgb(94, 94, 94);
+}
+.skill-section .skill-first-section .animation-part .mini-cube-skill .top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateZ(-10.4vw);
+  background-color: rgba(0, 0, 0, 0.432);
+  filter: blur(10px);
+}
+.skill-section .skill-first-section .animation-part .big-cube {
+  width: 14vw;
+  height: 14vw;
+  position: relative;
+  perspective: 1000;
+  transform-style: preserve-3d;
+  animation: animate-big-cube 3s linear infinite;
+}
+@keyframes animate-big-cube {
+  0% {
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(0);
+  }
+}
+.skill-section .skill-first-section .animation-part .big-cube:hover span {
+  background-color: transparent;
+  color: transparent;
+  border: 5px solid rgb(64, 64, 64);
+  box-shadow: 0 0 20px 5px rgb(64, 64, 64);
+}
+.skill-section .skill-first-section .animation-part .big-cube span {
+  width: 14vw;
+  height: 14vw;
+  background-color: grey;
+  transform-style: preserve-3d;
+  position: absolute;
+  font-size: 2vw;
+  font-weight: bold;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+.skill-section .skill-first-section .animation-part .big-cube .front {
+  transform: translateZ(7vw);
+  background-color: rgb(192, 192, 192);
+}
+.skill-section .skill-first-section .animation-part .big-cube .left {
+  transform: rotateY(90deg) translateZ(7vw);
+  background-color: rgb(161, 161, 161);
+}
+.skill-section .skill-first-section .animation-part .big-cube .back {
+  transform: rotateY(180deg) translateZ(7vw);
+  background-color: rgb(192, 192, 192);
+}
+.skill-section .skill-first-section .animation-part .big-cube .rigth {
+  transform: rotateY(-90deg) translateZ(7vw);
+  background-color: rgb(161, 161, 161);
+}
+.skill-section .skill-first-section .animation-part .big-cube .top {
+  transform: rotateX(90deg) translateZ(7vw);
+  background-color: rgb(221, 221, 221);
+}
+.skill-section .skill-first-section .big-text-part {
+  width: 60%;
+  height: 100%;
+  max-height: 90vh;
+  align-items: flex-start;
+}
+.skill-section .skill-first-section .big-text-part h2 {
+  font-size: 8vw;
+  color: white;
+}
+.skill-section .skill-second-section {
+  width: 100%;
+  min-height: 90vw;
+  color: white;
+  margin: 3vw 0 5vw 0;
+  gap: 7vw;
+}
+.skill-section .skill-second-section hr {
+  width: 14vw;
+  height: 0.2vw;
+  background-color: white;
+  border: none;
+}
+.skill-section .skill-second-section h3 {
+  font-size: 1.8vw;
+  font-weight: 900;
+}
+.skill-section .skill-second-section .core, .skill-section .skill-second-section .other-tools, .skill-section .skill-second-section .framework {
+  width: 100%;
+  min-height: 17vw;
+  gap: 7vw;
+}
+.skill-section .skill-second-section .core .title, .skill-section .skill-second-section .other-tools .title, .skill-section .skill-second-section .framework .title {
+  width: 100%;
+  height: 2vw;
+  gap: 1.4vw;
+}
+.skill-section .skill-second-section .core .logo, .skill-section .skill-second-section .other-tools .logo, .skill-section .skill-second-section .framework .logo {
+  width: 100%;
+  min-height: 10vw;
+  flex-wrap: wrap;
+  gap: 12vw;
+}
+.skill-section .skill-second-section .core .logo .img-container, .skill-section .skill-second-section .other-tools .logo .img-container, .skill-section .skill-second-section .framework .logo .img-container {
+  width: 7vw;
+  height: 8.3vw;
+  position: relative;
+}
+.skill-section .skill-second-section .core .logo .img-container .FIGMA, .skill-section .skill-second-section .other-tools .logo .img-container .FIGMA, .skill-section .skill-second-section .framework .logo .img-container .FIGMA {
+  width: 5.5vw;
+  height: 7vw;
+  position: absolute;
+  perspective: 1000;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease-in-out;
+}
+.skill-section .skill-second-section .core .logo .img-container .FIGMA img, .skill-section .skill-second-section .other-tools .logo .img-container .FIGMA img, .skill-section .skill-second-section .framework .logo .img-container .FIGMA img {
+  width: 100%;
+  height: 100%;
+}
+.skill-section .skill-second-section .core .logo .img-container span, .skill-section .skill-second-section .other-tools .logo .img-container span, .skill-section .skill-second-section .framework .logo .img-container span {
+  width: 7vw;
+  height: 6.2vw;
+  position: absolute;
+  perspective: 1000;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease-in-out;
+}
+.skill-section .skill-second-section .core .logo .img-container span img, .skill-section .skill-second-section .other-tools .logo .img-container span img, .skill-section .skill-second-section .framework .logo .img-container span img {
+  width: 100%;
+  height: 100%;
+}
+.skill-section .skill-second-section .core .logo .img-container img, .skill-section .skill-second-section .other-tools .logo .img-container img, .skill-section .skill-second-section .framework .logo .img-container img {
+  width: 7vw;
+  height: 8.3vw;
+  position: absolute;
+  perspective: 1000;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease-in-out;
+}
+.skill-section .skill-second-section .core .logo .img-container p, .skill-section .skill-second-section .other-tools .logo .img-container p, .skill-section .skill-second-section .framework .logo .img-container p {
+  font-weight: bolder;
+  text-align: center;
+  position: absolute;
+  font-size: 2vw;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.skill-section .skill-second-section .core .logo .img-container:hover img, .skill-section .skill-second-section .other-tools .logo .img-container:hover img, .skill-section .skill-second-section .framework .logo .img-container:hover img {
+  transform: rotateX(30deg);
+  opacity: 0.5;
+  filter: blur(3px);
+}
+.skill-section .skill-second-section .core .logo .img-container:hover span, .skill-section .skill-second-section .other-tools .logo .img-container:hover span, .skill-section .skill-second-section .framework .logo .img-container:hover span {
+  transform: rotateX(30deg);
+  opacity: 0.5;
+  filter: blur(3px);
+}
+.skill-section .skill-second-section .core .logo .img-container:hover p, .skill-section .skill-second-section .other-tools .logo .img-container:hover p, .skill-section .skill-second-section .framework .logo .img-container:hover p {
+  transform: translateY(-3.5vw);
+  opacity: 1;
+}
+/* responsive tablette skill section */
+@media screen and (max-width: 1000px) {
+  .skill-section {
+    min-height: 1000px;
+  }
+  .skill-section h6 {
+    left: 15%;
+  }
+  .skill-section .skill-first-section {
+    min-height: 600px;
+  }
+  .skill-section .skill-first-section .animation-part {
+    width: 30%;
+  }
+  .skill-section .skill-first-section .big-text-part {
+    width: 70%;
+  }
+  .skill-section .skill-first-section .big-text-part h2 {
+    font-size: 10vw;
+  }
+  .skill-section .skill-second-section {
+    min-height: 70vh;
+  }
+}
+/* responsive for phone skill section */
+@media screen and (max-width: 500px) {
+  .skill-section {
+    min-height: 600px;
+  }
+  .skill-section h6 {
+    font-style: 3vw;
+    top: 100px;
+  }
+  .skill-section .skill-first-section {
+    min-height: 400px;
+  }
+  .skill-section .skill-first-section .animation-part {
+    width: 35%;
+  }
+  .skill-section .skill-first-section .big-text-part {
+    width: 65%;
+  }
+  .skill-section .skill-second-section {
+    min-height: 90vw;
+  }
+}/*# sourceMappingURL=Skill.css.map */

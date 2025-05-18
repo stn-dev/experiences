@@ -1,0 +1,140 @@
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section {
+    width: 100%;
+    min-height: 100vw;
+    padding: 3.5vw 0;
+    background-color: #A6A6A6;
+    position: relative;
+    @extend %flexColumn;
+    gap: 3.5vw;
+
+    .contact-section-child {
+        width: 100%;
+        min-height: 100vw;
+        padding: 3.5vw 0;
+        background-color: #A6A6A6;
+        position: relative;
+        @extend %flexColumn;
+        gap: 3.5vw;
+    }
+
+    h6 {
+        font-size: 2vw;
+        color: black;
+    }
+
+    .big-text-contact {
+        @extend %flexColumn;
+        align-items: flex-start;;
+        gap: 20px;
+
+        h2 {
+            font-size: 8vw;
+            font-weight: bold;
+        }
+    }
+
+    .spinner {
+        position: absolute;
+        top: 45%;
+        left: 53%;
+        z-index: 100;
+        transform: rotateZ(90deg);
+    }
+
+    .contact-form {
+        width: 70vw;
+        height: 43vw;
+        @extend %flexColumn;
+        gap: 2.7vw;
+
+        .inputs {
+            width: 100%;
+            height: 7vw;
+            @extend %flex;
+            gap: 4vw;
+            input {
+                width: 35vw;
+                height: 100%;
+                background-color: #AFAFAF;
+                padding: 0 2vw;
+                outline: none;
+                border: 0.3vw solid white;
+                color: rgb(85, 85, 85);
+                font-size: 1.5vw;
+                font-weight: bolder;
+            }
+            .error {
+                border: 0.3vw solid red;
+                background-color: #dab6b6;
+            }
+        }
+        .text-area {
+            width: 100%;
+            height: 25vw;
+            textarea {
+                width: 100%;
+                height: 100%;
+                background-color: #AFAFAF;
+                padding: 2vw;
+                outline: none;
+                border: 0.3vw solid white;
+                color: rgb(85, 85, 85);
+                font-size: 1.5vw;
+                font-weight: bolder;
+            }
+            .error {
+                border: 0.3vw solid red;
+                background-color: #dab6b6;
+            }
+        }
+        button {
+            width: 14.5vw;
+            height: 5vw;
+            font-size: 1.5vw;
+            font-weight: bolder;
+            color: white;
+            background-color: #AFAFAF;
+            border: 0.3vw solid white;
+            @extend %flex;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background-color: white;
+                color: gray;
+                cursor: pointer;
+            }
+        }
+    }
+    .social-media {
+        width: 53.4vw;
+        height: 4vw;
+        @extend %flex;
+        gap: 1.5vw;
+        hr {
+            width: 20vw;
+            height: 0.2vw;
+            border: none;
+            background-color: black;
+        }
+        .social-media-icon {
+            @extend %flex;
+            gap: 1.4vw;
+            img {
+                width: 4vw;
+                height: 4vw;
+            }
+        }
+
+    }
+}

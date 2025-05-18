@@ -1,0 +1,121 @@
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutSection {
+    width: 100vw;
+    height: 100vh;
+    background-color: #6C6C6C;
+    position: relative;
+    overflow: hidden;
+    p {
+        font-size: 2vw;
+        color:white;
+        position: absolute;
+        top: 130px;
+        left: 45%;
+    }
+
+    .big-text-about {
+        width: 38vw;
+        height: 41vw;
+        @extend %flexColumn;
+        align-items: flex-start;
+        position: absolute;
+        top: 7vw;
+        left: 6vw;
+        h2 {
+            font-size: 8vw;
+            font-weight: bolder;
+            color: black;
+        }
+    }
+    .about-text {
+        width: 38vw;
+        height: 17.3vw;
+        color: white;
+        font-size: 1.7vw;
+        position: absolute;
+        right: 100px;
+        bottom: 7vh;
+        box-sizing: border-box;
+    }
+    .about-img-container {
+        width: 20vw;
+        height: 25vw;
+        border-radius: 2.5vw;
+        background-color: #D9D9D9;
+        position: absolute;
+        top: 10vw;
+        right: 17.3vw;
+    }
+
+}
+
+
+/* responsive tablette about section */
+
+@media  screen and (max-width:1000px) {
+    .aboutSection {
+        .big-text-about {
+            width: 40vw;
+            height: 45vw;
+            top: 250px;
+            left: 3vw;
+            h2 {
+                font-size: 10vw;
+            }
+        }
+        .about-text {
+            width: 40vw;
+            height: 25vw;
+            font-size: 2.5vw;
+            font-weight: lighter;
+            bottom: 12vw;
+        }
+        .about-img-container {
+            width: 25vw;
+            height: 35vw;
+            border-radius: 3.5vw;
+            top: 250px;
+        }
+    }
+}
+
+
+/* responsive,for phone about section */
+
+@media screen and (max-width:500px) {
+    .aboutSection {
+        p {
+            font-size: 3vw;
+            top: 50px;
+            left: 70%;
+        }
+        .big-text-about {
+            top: 130px;
+            left: 6vw;
+             h2 {
+                font-size: 17vw;
+             }
+        }
+        .about-text {
+            width: 60vw;
+            height: 37vw;
+            font-size: 4vw;
+            bottom: 25vw;
+            right: 10vw;
+        }
+        .about-img-container {
+            display: none;
+        }
+    }
+}

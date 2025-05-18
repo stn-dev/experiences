@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$dark : rgb(0, 0, 23);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+%flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  overflow-x: hidden; 
+}
+
+.template {
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 100vw;
+  height: 60px;
+  background-color: $dark;
+  color: blue;
+  @extend %flex;
+  justify-content: space-around;
+  position: fixed;
+  box-shadow: 8px 0 10px 5px rgba(0, 0, 255, 0.502);
+  top: 0;
+  left: 0;
+  z-index: 20;
+
+  .links {
+    width: 50%;
+    height: 100%;
+    padding: 0 20px;
+    @extend %flex;
+    justify-content: space-between;
+  }
+
+  .button-links {
+    width: 50%;
+    height: 100%;
+    padding: 0  50px; 
+    @extend %flex;
+    justify-content: flex-end;
+    gap: 30px;
+
+    .button-container {
+      @extend %flex;
+      gap: 20px;
+    }
+
+    .log-out-btn{
+      background-color: rgb(255, 69, 69);
+      border:none;
+      color: white;
+    }
+
+    button {
+      width: fit-content;
+      height: fit-content;
+      padding: 16px 32px;
+      font-weight: bolder;
+      background-color: rgb(0, 0, 210);
+      color: white;
+    }
+  }
+}
+
+.banner-container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  overflow-x: hidden;
+  z-index: 1000;
+  .banner {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 20%;
+    background-image: linear-gradient(rgb(0, 0, 161),rgb(0, 0, 44));
+  }
+  .one {
+    left: 0;
+  }
+  .two {
+    left: 20%;
+  }
+  .three {
+    left: 40%;
+  }
+  .four {
+    left: 60%;
+  }
+  .five {
+    left: 80%;
+  }
+}
+
+ 
+
+

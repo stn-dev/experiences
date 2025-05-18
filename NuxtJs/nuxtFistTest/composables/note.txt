@@ -1,0 +1,1 @@
+the composable is used to create custom hook and it's is avalaible in all the file thanks to the auto-import of nuxt js

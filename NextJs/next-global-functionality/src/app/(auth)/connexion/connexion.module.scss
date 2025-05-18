@@ -1,0 +1,15 @@
+$dark : rgb(0, 0, 23);
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: $dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "card_page",
+  "type": "SharedSlice",
+  "name": "CardPage",
+  "description": "CardPage",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "card_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "card title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "description": {
+          "type": "Text",
+          "config": {
+            "label": "description",
+            "placeholder": ""
+          }
+        },
+        "card_img": {
+          "type": "Image",
+          "config": {
+            "label": "card_img",
+            "constraint": {
+              "width": 1440,
+              "height": 600
+            },
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

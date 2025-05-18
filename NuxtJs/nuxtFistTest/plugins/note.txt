@@ -1,0 +1,1 @@
+the plugins folder is a scpecial folder known by nuxt too. It's is used to give information that is avalaible in the entire app. His speciality is that the plugin run before all the other funtion in nuxt and avalaible everywhere

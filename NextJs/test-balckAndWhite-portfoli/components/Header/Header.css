@@ -1,0 +1,231 @@
+.linksContainer .link, .navigation .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linksContainer, .welcoming {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation {
+  width: 100%;
+  height: 7vw;
+  padding: 0 7vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  position: fixed;
+  z-index: 100;
+}
+.navigation img {
+  width: 6.2vw;
+  height: 5.5vw;
+}
+.navigation .menu {
+  width: 15vw;
+  height: 4vw;
+  border: 0.2vw solid white;
+  border-radius: 1vw;
+  position: relative;
+  gap: 2vw;
+  z-index: 120;
+}
+
+.line {
+  width: 3.4vw;
+  height: 1.5vw;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.line .one, .line .rotate1 {
+  width: 3vw;
+  height: 0.2vw;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s ease;
+}
+.line .rotate1 {
+  transform: rotate(26deg);
+  top: 0.69vw;
+  transition: all 0.3s ease;
+  border: none;
+}
+.line .two, .line .rotate2 {
+  width: 3vw;
+  height: 0.2vw;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+.line .rotate2 {
+  transform: rotate(-26deg);
+  bottom: 0.69vw;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.text {
+  color: white;
+  font-size: 1.4vw;
+  font-weight: bolder;
+}
+
+.welcoming {
+  width: 100vw;
+  height: 100vh;
+  padding: 0 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  font-size: 12vw;
+  font-weight: bold;
+  z-index: 250;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+.overlay span {
+  width: 20vw;
+  height: 100vh;
+  background-color: rgb(191, 188, 188);
+}
+
+/* LINKS SECTION */
+.linksContainer {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+  position: absolute;
+  background-color: transparent;
+  opacity: 0;
+  gap: 2vw;
+  top: 0;
+  left: -100vw;
+  z-index: 10;
+}
+.linksContainer .link {
+  width: 100%;
+  height: 12.5vw;
+  padding: 1.4vw 7vw;
+  justify-content: space-between;
+  position: relative;
+  opacity: 0;
+  z-index: 9;
+}
+.linksContainer .link a {
+  text-decoration: none;
+  font-size: 7vw;
+  font-weight: bolder;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+.linksContainer .link a:hover {
+  margin-left: 7vw;
+  color: transparent;
+  -webkit-text-stroke-width: 0.2vw;
+  -webkit-text-stroke-color: black;
+}
+.linksContainer .link img {
+  width: 4.2vw;
+  height: 3.5vw;
+}
+.linksContainer .link hr {
+  width: 85vw;
+  height: 0.2vw;
+  border: none;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 7vw;
+}
+
+.transition {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  z-index: 5;
+}
+.transition span {
+  width: 0;
+  height: 20vh;
+  background-color: #AFAFAF;
+}
+
+/* responsive phone navbar */
+@media screen and (max-width: 400px) {
+  .navigation {
+    height: 14vw;
+  }
+  .navigation img {
+    width: 10vw;
+    height: 10vw;
+  }
+  .navigation .menu {
+    width: 20vw;
+    height: 6vw;
+  }
+  .navigation .line {
+    width: 5vw;
+    height: 2vw;
+  }
+  .navigation .line .one, .navigation .line .rotate1 {
+    width: 4.5vw;
+    height: 0.4vw;
+  }
+  .navigation .line .rotate1 {
+    top: 1vw;
+  }
+  .navigation .line .rotate2 {
+    top: 1vw;
+  }
+  .navigation .line .two, .navigation .line .rotate2 {
+    width: 4.5vw;
+    height: 0.4vw;
+  }
+  .navigation .text {
+    font-size: 2.3vw;
+  }
+  .linksContainer {
+    gap: 15vw;
+  }
+  .linksContainer .link {
+    height: 20vw;
+    padding: 0 10vw;
+  }
+  .linksContainer .link a {
+    font-size: 10vw;
+  }
+  .linksContainer .link img {
+    width: 6vw;
+    height: 5vw;
+  }
+  .linksContainer .link hr {
+    width: 80vw;
+    height: 0.4vw;
+    left: 9vw;
+  }
+}/*# sourceMappingURL=Header.css.map */

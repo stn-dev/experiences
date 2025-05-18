@@ -1,0 +1,63 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"card_img": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
+					"width": 4000,
+					"height": 4000
+				},
+				"url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?rect=400%2C0%2C3200%2C4000&w=200&h=250",
+				"width": 200,
+				"height": 250,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 400,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"title_card": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Welcome"
+						}
+					}
+				]
+			},
+			"card_descri": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Quis proident reprehenderit tempor. Laborum et dolor cupidatat aliquip tempor minim voluptate ea elit sunt elit pariatur ex. Cillum velit nulla cupidatat sit enim ullamco."
+						}
+					}
+				]
+			},
+			"card_link": {
+				"key": "c0ba59b5-bc6b-44e5-96f5-d68ff7ba43ea",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://prismic.io",
+					"text": "kill"
+				}
+			}
+		},
+		"items": []
+	}
+]

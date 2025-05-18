@@ -1,0 +1,62 @@
+.container {
+  @apply w-screen min-h-screen bg-gray-700 text-white;
+}
+.container h1 {
+  @apply w-full flex items-center justify-center text-6xl font-bold font-sans h-screen;
+}
+.slider {
+  @apply min-h-screen flex flex-nowrap items-center gap-5;
+}
+
+.slider .box {
+  @apply w-[300px] h-[200px] md:w-[500px] md:h-[300px] xl:w-[800px] xl:h-[400px] 2xl:w-[1000px] 2xl:h-[600px] shrink-0 rounded-2xl flex items-center justify-center text-2xl font-sans font-bold;
+}
+
+.blue {
+  @apply bg-blue-500;
+}
+.red {
+  @apply bg-red-500;
+}
+.green {
+  @apply bg-green-500;
+}
+.yellow {
+  @apply bg-yellow-500;
+}
+.aqua {
+  @apply bg-cyan-400;
+}
+.gray {
+  @apply bg-gray-500;
+}
+
+.end {
+  @apply w-full h-screen text-6xl font-sans font-bold flex items-center justify-center;
+}
+
+/* cities part */
+
+.cities-container {
+  @apply w-full min-h-screen py-10;
+}
+
+.cities-container h1 {
+  @apply w-full flex items-center justify-center text-6xl font-bold font-sans;
+}
+
+.cities-slider {
+  @apply min-h-screen flex flex-nowrap items-center gap-10;
+}
+
+.cities-slider > div {
+  @apply w-fit h-fit px-10 py-5  md:px-20 md:py-10 text-5xl md:text-8xl xl:text-9xl 2xl:text-[150px] font-bold font-sans bg-black text-white;
+}
+
+.cities-slider div:last-child {
+  @apply bg-red-600;
+}
+
+.space {
+  @apply w-full flex items-center justify-center text-6xl font-bold font-sans h-[50vh];
+}
